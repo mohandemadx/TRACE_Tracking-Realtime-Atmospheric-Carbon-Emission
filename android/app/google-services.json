@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "87234020223",
+    "firebase_url": "https://saifproject-701cc-default-rtdb.firebaseio.com",
+    "project_id": "saifproject-701cc",
+    "storage_bucket": "saifproject-701cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87234020223:android:155ff21bb354575e7c104a",
+        "android_client_info": {
+          "package_name": "com.example.newproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87234020223-sfjag93il7p88vrfre4h750hdgphq6ai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCcFhbX3m9xaUbaCvsyXaPCeic1_PD50A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87234020223-sfjag93il7p88vrfre4h750hdgphq6ai.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "87234020223-vvlpa57vct51n4lefuiufj248u7jcl5a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.newproject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
