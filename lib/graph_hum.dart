@@ -6,6 +6,7 @@ import 'package:syncfusion_flutter_charts/charts.dart';
 dynamic temp;
 dynamic gas;
 dynamic hum;
+
 class HumGraph extends StatefulWidget {
   const HumGraph({Key? key, required this.title}) : super(key: key);
 
@@ -15,6 +16,7 @@ class HumGraph extends StatefulWidget {
   // ignore: library_private_types_in_public_api
   GraphScreen createState() => GraphScreen();
 }
+
 class GraphScreen extends State<HumGraph> {
   late List<LiveData> chartData;
   late ChartSeriesController _chartSeriesController;
@@ -32,7 +34,7 @@ class GraphScreen extends State<HumGraph> {
   void getData() async {
     FirebaseDatabase database = FirebaseDatabase.instance;
     DatabaseReference tempRef = database.ref('readings/temp');
-    
+
     tempRef.onValue.listen((DatabaseEvent event) {
       final data = event.snapshot.value;
       setState(() {
@@ -46,7 +48,7 @@ class GraphScreen extends State<HumGraph> {
         gas = data;
       });
     });
-    DatabaseReference humRef = database.ref('readings/gas');
+    DatabaseReference humRef = database.ref('readings/hum');
     humRef.onValue.listen((DatabaseEvent event) {
       final data = event.snapshot.value;
       setState(() {
@@ -64,12 +66,12 @@ class GraphScreen extends State<HumGraph> {
           centerTitle: true,
           title: const Text('Humidity Graph'),
           automaticallyImplyLeading: false,
-          leading: IconButton (
-                 icon: const Icon(Icons.arrow_back), 
-                 onPressed: () { 
-                    Navigator.pop(context);
-                 },
-            ),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
         body: SfCartesianChart(
           backgroundColor: Colors.white,

@@ -154,7 +154,7 @@ class HomeScreen extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   const Text(
-                    "Temperature Reading:",
+                    "Temp Reading:",
                     style: TextStyle(
                       color: Colors.blueGrey,
                       fontSize: 35,
