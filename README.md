@@ -1,8 +1,8 @@
-# newproject
+# CO2 Detection System
 
-A new Flutter project.
+An IoT project using Node-MCU, DHT22 Sensor, MQ7 Sensor, with GUI built using Flutter and Firebase.
 
-## Getting Started
+## Hardware Part
 
 This project is a starting point for a Flutter application.
 
