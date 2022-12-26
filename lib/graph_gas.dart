@@ -6,6 +6,7 @@ import 'package:syncfusion_flutter_charts/charts.dart';
 dynamic temp;
 dynamic gas;
 dynamic hum;
+
 class GasGraph extends StatefulWidget {
   const GasGraph({Key? key, required this.title}) : super(key: key);
 
@@ -15,6 +16,7 @@ class GasGraph extends StatefulWidget {
   // ignore: library_private_types_in_public_api
   GraphScreen createState() => GraphScreen();
 }
+
 class GraphScreen extends State<GasGraph> {
   late List<LiveData> chartData;
   late ChartSeriesController _chartSeriesController;
@@ -25,14 +27,14 @@ class GraphScreen extends State<GasGraph> {
     super.initState();
     chartData = getChartData();
     //shown data delayed by 1 sec.
-    Timer.periodic(const Duration(seconds: 2), updateDataSource);
+    Timer.periodic(const Duration(seconds: 1), updateDataSource);
     super.initState();
   }
 
   void getData() async {
     FirebaseDatabase database = FirebaseDatabase.instance;
     DatabaseReference tempRef = database.ref('readings/temp');
-    
+
     tempRef.onValue.listen((DatabaseEvent event) {
       final data = event.snapshot.value;
       setState(() {
@@ -64,12 +66,12 @@ class GraphScreen extends State<GasGraph> {
           centerTitle: true,
           title: const Text('CO2 Graph'),
           automaticallyImplyLeading: false,
-          leading: IconButton (
-                 icon: const Icon(Icons.arrow_back), 
-                 onPressed: () { 
-                    Navigator.pop(context);
-                 },
-            ),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
         body: SfCartesianChart(
           backgroundColor: Colors.white,

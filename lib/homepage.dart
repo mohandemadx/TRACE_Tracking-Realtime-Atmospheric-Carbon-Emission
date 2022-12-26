@@ -49,7 +49,7 @@ class HomeScreen extends State<MyHomePage> {
     });
   }
 
-  String text = "....";
+  String des = "An app to read CO2, Temp, and Humidity from sensors using Firebase and IoT technology";
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +64,7 @@ class HomeScreen extends State<MyHomePage> {
                   context: context,
                   builder: (context) => AlertDialog(
                         title: const Text("Description:"),
-                        content: Text(text),
+                        content: Text(des),
                         actions: [
                           TextButton(
                               onPressed: Navigator.of(context).pop,
@@ -78,7 +78,7 @@ class HomeScreen extends State<MyHomePage> {
       ),
       body: Center(
         child: Container(
-          color: const Color.fromARGB(255, 213, 198, 241),
+          color: Color.fromARGB(255, 214, 208, 226),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
@@ -96,12 +96,12 @@ class HomeScreen extends State<MyHomePage> {
                     "Gas Reading:",
                     style: TextStyle(
                       color: Colors.blueGrey,
-                      fontSize: 35,
+                      fontSize: 25,
                     ),
                   ),
                   const SizedBox(
-                    height: 30,
-                    width: 30,
+                    height: 20,
+                    width: 20,
                   ),
                   Container(
                     decoration: const BoxDecoration(
@@ -110,15 +110,15 @@ class HomeScreen extends State<MyHomePage> {
                         Radius.circular(16),
                       ),
                     ),
-                    width: 170.0,
-                    height: 60.0,
+                    width: 140.0,
+                    height: 40.0,
                     child: Container(
                       alignment: Alignment.center,
                       child: Text(
                         '$gas',
                         style: const TextStyle(
                           color: Colors.blueGrey,
-                          fontSize: 35,
+                          fontSize: 30,
                         ),
                       ),
                     ),
@@ -126,8 +126,8 @@ class HomeScreen extends State<MyHomePage> {
                 ],
               ),
               const SizedBox(
-                height: 30,
-                width: 30,
+                height: 20,
+                width: 20,
               ),
               ElevatedButton(
                 onPressed: () async {
@@ -142,10 +142,10 @@ class HomeScreen extends State<MyHomePage> {
               ),
               const Divider(
                 color: Colors.blueGrey,
-                height: 80,
+                height: 50,
                 thickness: 2,
-                indent: 20,
-                endIndent: 20,
+                indent: 30,
+                endIndent: 30,
               ),
               //TEMP
               Row(
@@ -157,12 +157,12 @@ class HomeScreen extends State<MyHomePage> {
                     "Temp Reading:",
                     style: TextStyle(
                       color: Colors.blueGrey,
-                      fontSize: 35,
+                      fontSize: 25,
                     ),
                   ),
                   const SizedBox(
-                    height: 30,
-                    width: 30,
+                    height: 20,
+                    width: 20,
                   ),
                   Container(
                     decoration: const BoxDecoration(
@@ -171,15 +171,15 @@ class HomeScreen extends State<MyHomePage> {
                         Radius.circular(16),
                       ),
                     ),
-                    width: 170.0,
-                    height: 60.0,
+                    width: 140.0,
+                    height: 40.0,
                     child: Container(
                       alignment: Alignment.center,
                       child: Text(
                         '$temp',
                         style: const TextStyle(
                           color: Colors.blueGrey,
-                          fontSize: 35,
+                          fontSize: 30,
                         ),
                       ),
                     ),
@@ -187,8 +187,8 @@ class HomeScreen extends State<MyHomePage> {
                 ],
               ),
               const SizedBox(
-                height: 30,
-                width: 30,
+                height: 20,
+                width: 20,
               ),
               ElevatedButton(
                 onPressed: () async {
@@ -203,10 +203,10 @@ class HomeScreen extends State<MyHomePage> {
               ),
               const Divider(
                 color: Colors.blueGrey,
-                height: 80,
+                height: 50,
                 thickness: 2,
-                indent: 20,
-                endIndent: 20,
+                indent: 30,
+                endIndent: 30,
               ),
               //HUM
               Row(
@@ -218,12 +218,12 @@ class HomeScreen extends State<MyHomePage> {
                     "Humidity Reading:",
                     style: TextStyle(
                       color: Colors.blueGrey,
-                      fontSize: 35,
+                      fontSize: 25,
                     ),
                   ),
                   const SizedBox(
-                    height: 30,
-                    width: 30,
+                    height: 10,
+                    width: 10,
                   ),
                   Container(
                     decoration: const BoxDecoration(
@@ -232,15 +232,15 @@ class HomeScreen extends State<MyHomePage> {
                         Radius.circular(16),
                       ),
                     ),
-                    width: 170.0,
-                    height: 60.0,
+                    width: 140.0,
+                    height: 40.0,
                     child: Container(
                       alignment: Alignment.center,
                       child: Text(
                         '$hum',
                         style: const TextStyle(
                           color: Colors.blueGrey,
-                          fontSize: 35,
+                          fontSize: 30,
                         ),
                       ),
                     ),
@@ -248,8 +248,8 @@ class HomeScreen extends State<MyHomePage> {
                 ],
               ),
               const SizedBox(
-                height: 30,
-                width: 30,
+                height: 20,
+                width: 20,
               ),
               ElevatedButton(
                 onPressed: () async {
