@@ -4,7 +4,7 @@ An IoT project using Node-MCU, DHT22 Sensor, MQ7 Sensor, with GUI built using Fl
 
 ## Hardware Part
 
-This project using Node-MCU, DHT 22 Temperature and Humidity Sensor, MQ7 CO$_2$ Sensor
+This project using Node-MCU, DHT 22 Temperature and Humidity Sensor, MQ7 CO $_2$ Sensor
 
 A few resources to get you started if this is your first Flutter project:
 
