@@ -1,16 +1,15 @@
 # CO2 Detection System
 
-An IoT project using Node-MCU, DHT22 Sensor, MQ7 Sensor, with GUI built using Flutter and Firebase.
+An IoT Project to keep track of the effect of CO2 Emissions on the Global Warming
 
-## Hardware Part
+## Hardware Part:
 
-This project using Node-MCU, DHT 22 Temperature and Humidity Sensor, MQ7 CO $_2$ Sensor
+This project is using Node-MCU ESP8266 Wifi-Module, DHT 22 Temperature and Humidity Sensor, MQ7 CO2 Sensor.
 
-A few resources to get you started if this is your first Flutter project:
+## Software Part:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The Software part consists of 2 interactive GUIs (Android and Web Applications) with a single Dart codebase. This was possible thanks to the cross platform applications development provided by Flutter. 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## IoT Part:
+
+The readings from the hardware part was then displayed theough the software GUI and the project was connected using Realtime Database from Firebase.
