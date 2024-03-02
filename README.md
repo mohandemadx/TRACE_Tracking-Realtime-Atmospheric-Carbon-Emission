@@ -2,6 +2,10 @@
 
 An IoT Project to Tracking Realtime Atmoshpheric Carbon Emission and its effect on the Global Warming.
 
+## TOOLS:
+<img width="75px" src="https://github.com/Pedro-Murilo/icons-for-readme/blob/main/.github/firebase-icon.svg" alt="Firebase Icon" />
+
+
 ### Hardware Part:
 
 This project is using Node-MCU ESP8266 Wifi-Module, DHT 22 Temperature and Humidity Sensor, MQ7 CO2 Sensor.
