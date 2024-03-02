@@ -1,6 +1,6 @@
-# CO2 Detection System
+# TRACE SYSTEM
 
-An IoT Project to keep track of the effect of CO2 Emissions on the Global Warming
+An IoT Project to Tracking Realtime Atmoshpheric Carbon Emission and its effect on the Global Warming.
 
 ### Hardware Part:
 
