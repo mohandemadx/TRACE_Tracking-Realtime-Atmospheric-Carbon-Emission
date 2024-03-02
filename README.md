@@ -3,8 +3,10 @@
 An IoT Project to Tracking Realtime Atmoshpheric Carbon Emission and its effect on the Global Warming.
 
 ## TOOLS:
-<img width="75px" src="https://github.com/Pedro-Murilo/icons-for-readme/blob/main/.github/firebase-icon.svg" alt="Firebase Icon" />
-
+- Flutter & Dart
+- Firebase
+- ESP8266 Chip
+- C Arduino
 
 ### Hardware Part:
 
